@@ -14,10 +14,8 @@ class ViewController: UIViewController {
     // https://calendarific.com/api/v2
     
     @IBOutlet var tableView: UITableView!
-    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet weak var searchBar: UISearchBar!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -43,9 +41,17 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        return cell
     }
     
+    
+    
+}
+
+extension ViewController: UISearchBarDelegate {
     
     
 }

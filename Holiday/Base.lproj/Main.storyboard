@@ -49,7 +49,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="dfj-FR-Ouc"/>
                                 </connections>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="pGr-pP-2EZ">
+                            <searchBar contentMode="redraw" placeholder="검색하세요." translatesAutoresizingMaskIntoConstraints="NO" id="pGr-pP-2EZ">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -68,7 +68,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="rGZ-t4-sDg"/>
                     <connections>
-                        <outlet property="searchBar" destination="pGr-pP-2EZ" id="8pr-B3-oMJ"/>
+                        <outlet property="searchBar" destination="pGr-pP-2EZ" id="c8V-3G-HIr"/>
                         <outlet property="tableView" destination="oR0-Mf-1j8" id="Dpx-Jx-8C7"/>
                     </connections>
                 </viewController>
