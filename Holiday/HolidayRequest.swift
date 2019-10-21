@@ -56,15 +56,6 @@ struct HolidayRequest {
                 completion(.failure(.canNotProcessData))
             }
         }
-        
         dataTask.resume()
-        
-        
-        
-        
-        
-        
     }
-    
-    
 }
